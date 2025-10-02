@@ -9,7 +9,7 @@ const aboutPageStyles = {
 const AboutPage = () => {
   return (
     <div style={aboutPageStyles}>
-      <h2>About Techpotli Showcase</h2>
+      <h2>About This Website</h2>
       <p>
         This project is a modern e-commerce showcase built with the MERN stack in mind. 
         It demonstrates key front-end development skills using React, including component-based architecture, 
