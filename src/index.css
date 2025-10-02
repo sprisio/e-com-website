@@ -1,0 +1,44 @@
+/* Add this to the top of src/index.css */
+
+/* 1. Default Light Theme Variables */
+:root {
+  --font-color: #2c3e50;
+  --bg-color: #f4f6f8;
+  --card-bg-color: #ffffff;
+  --card-border-color: #ddd;
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --navbar-bg-color: #2a3a4b;
+  --link-color: #007bff;
+  --hover-color: #0056b3;
+}
+
+/* 2. Dark Theme Variable Overrides */
+body.dark-mode {
+  --font-color: #ecf0f1;
+  --bg-color: #1a202c;
+  --card-bg-color: #2d3748;
+  --card-border-color: #4a5568;
+  --card-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  --navbar-bg-color: #1c2633;
+  --link-color: #4299e1;
+  --hover-color: #63b3ed;
+}
+
+/* 3. Global Styles using Variables */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

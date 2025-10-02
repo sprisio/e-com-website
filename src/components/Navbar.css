@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.search-container input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none; /* Remove the blue outline on focus */
+    
+    /* --- ANIMATION --- */
+    width: 250px; /* Default width */
+    transition: width 0.4s ease-in-out; /* Smooth transition for the width property */
+}
+
+/* --- HOVER & FOCUS EFFECT --- */
+.search-container input:hover,
+.search-container input:focus {
+    width: 350px; /* Expanded width */
+}
+
+/* ... existing styles for .navbar and .navbar-brand ... */
+
+.nav-links {
+    /* Add this to center the links if they are the main content */
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 1rem; /* Add padding for spacing */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* ... existing styles for .search-container ... */
