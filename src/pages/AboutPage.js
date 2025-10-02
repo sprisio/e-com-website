@@ -1,15 +1,11 @@
 import React from 'react';
-
-const aboutPageStyles = {
-    padding: '2rem 4rem',
-    textAlign: 'center',
-    lineHeight: '1.6',
-};
+import './AboutPage.css'; // 1. Import the CSS file
 
 const AboutPage = () => {
   return (
-    <div style={aboutPageStyles}>
-      <h2>About This Website</h2>
+    // 2. Use a className instead of the style object
+    <div className="about-page"> 
+      <h2>About Techpotli Showcase</h2>
       <p>
         This project is a modern e-commerce showcase built with the MERN stack in mind. 
         It demonstrates key front-end development skills using React, including component-based architecture, 

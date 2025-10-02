@@ -49,3 +49,10 @@
     font-weight: bold;
     color: #007bff;
 }
+/* --- Add this media query at the end --- */
+@media (max-width: 768px) {
+  .product-card {
+    width: 85vw; /* Make the card take up 85% of the viewport width */
+    max-width: 400px; /* But don't let it get excessively wide on tablets */
+  }
+}

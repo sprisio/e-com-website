@@ -63,4 +63,30 @@
     color: #007bff;
 }
 
-/* ... existing styles for .search-container ... */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    padding: 1rem;
+    gap: 1rem; /* Add space between stacked items */
+  }
+
+  .nav-links {
+    order: 2; /* Change the visual order */
+  }
+  
+  .nav-controls {
+    order: 1;
+    width: 100%;
+    justify-content: space-between; /* Puts search on left, toggle on right */
+  }
+
+  .search-container {
+    flex-grow: 1; /* Allow search to take available space */
+  }
+
+  .search-container input,
+  .search-container input:hover,
+  .search-container input:focus {
+    width: 100%; /* Make search bar take full width of its container */
+  }
+}

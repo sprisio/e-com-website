@@ -1,0 +1,14 @@
+.about-page {
+    padding: 2rem 4rem;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px; /* Constrain line width for readability */
+    margin: 0 auto;   /* Center the container */
+}
+
+/* --- Media query for mobile padding --- */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1.5rem; /* Reduce padding on mobile */
+  }
+}
