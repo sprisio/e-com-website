@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     // 2. Use a className instead of the style object
     <div className="about-page"> 
-      <h2>About Techpotli Showcase</h2>
+      <h2>About This Website</h2>
       <p>
         This project is a modern e-commerce showcase built with the MERN stack in mind. 
         It demonstrates key front-end development skills using React, including component-based architecture, 
